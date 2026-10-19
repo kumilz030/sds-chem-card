@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>chem-card 藥品資料卡</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main>
+  <h1>chem-card</h1>
+  <p class="lead">輸入一個純物質，產生附出處的性質與危害資料卡。</p>
+  <form id="f" autocomplete="off">
+    <label for="q">物質名稱、CAS 號碼或化學式</label>
+    <div class="row"><input id="q" type="text" placeholder="例：67-64-1、acetone、丙酮、CH3COCH3" autofocus>
+    <button id="go" type="submit">查詢</button><button id="cancel" type="button" hidden>取消</button></div>
+  </form>
+  <p id="msg" role="status" aria-live="polite"></p>
+  <div id="cands" class="cands"></div>
+  <section id="out" hidden><button id="copy" type="button">複製</button><pre id="card"></pre></section>
+  <details id="dbg" hidden><summary>請求紀錄</summary><pre id="dbgbody"></pre></details>
+</main>
+<footer>資料來源：PubChem（美國國家醫學圖書館，公開資料）；中文名稱取自 Wikidata（CC0）與維基百科中文版（CC BY-SA 4.0），已轉為台灣用語，來源細節見資料卡。供學習參考，實際操作以正式 SDS 為準。</footer>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
