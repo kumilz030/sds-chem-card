@@ -1,0 +1,20 @@
+:root{--ink:#14232e;--mute:#53656f;--line:#c9d6dc;--bg:#eef3f5;--card:#fff;--hz:#b3261e;--ac:#0b5f73}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2rem 1rem 1rem}
+h1{margin:0;font-size:1.9rem;letter-spacing:.02em}.lead{margin:.2rem 0 1.5rem;color:var(--mute)}
+label{display:block;font-weight:600;margin-bottom:.35rem}
+.row{display:flex;gap:.5rem}
+input{flex:1;min-width:0;padding:.65rem .8rem;font:inherit;border:1.5px solid var(--line);border-radius:6px;background:var(--card)}
+button{font:inherit;padding:.6rem 1rem;border:1.5px solid var(--ac);background:var(--ac);color:#fff;border-radius:6px;cursor:pointer}
+button#cancel,button#copy{background:transparent;color:var(--ac)}
+button:disabled{opacity:.5;cursor:wait}
+:focus-visible{outline:3px solid #f2a900;outline-offset:2px}
+#msg{min-height:1.6rem;margin:.8rem 0 .4rem;white-space:pre-line;color:var(--mute)}
+.cands{display:grid;gap:.4rem}.cands button{text-align:left;background:var(--card);color:var(--ink);border-color:var(--line)}
+.cands button:hover{border-color:var(--ac)}
+#out{position:relative;margin-top:1rem}#copy{position:absolute;top:.6rem;right:.6rem;padding:.3rem .7rem;background:var(--card)}
+pre{margin:0;padding:1.1rem 1rem;overflow-x:auto;background:var(--card);border:1.5px solid var(--line);border-left:6px solid var(--hz);border-radius:6px;font:14px/1.65 "Noto Sans Mono CJK TC",ui-monospace,Menlo,Consolas,monospace;white-space:pre-wrap;word-break:break-word}
+details{margin-top:1rem;color:var(--mute)}details pre{border-left-color:var(--line);font-size:12px}
+footer{max-width:46rem;margin:0 auto;padding:1rem 1rem 2.5rem;font-size:.85rem;color:var(--mute)}
+@media(max-width:480px){.row{flex-wrap:wrap}input{flex-basis:100%}}
