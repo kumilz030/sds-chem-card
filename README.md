@@ -24,9 +24,9 @@ https://kumilz030.github.io/sds-chem-card/
 | --- | --- |
 | M1 輸入處理與測試 | 完成 |
 | M2 queue、cache、pubchem | 完成（未用真實回應驗證） |
-| M3 resolve | 英文名、CAS、化學式、模糊候選、中文名（經維基，**未實測**）完成 |
+| M3 resolve | 英文名、CAS、化學式、模糊候選、中文名（經維基）完成 |
 | M4 value、compare | 完成 |
-| M5 wikimedia、ghs | ghs 完成（詞表為空）；wikimedia 只做中文名稱（**未實測**），維基化學框物性未做 |
+| M5 wikimedia、ghs | ghs 完成（詞表為空）；wikimedia 只做中文名稱，維基化學框物性未做 |
 | M6 card、UI、debug | 完成 |
 | M0、M7 | **未做**：fixture、eval.mjs、標註資料（opencc-js 已放入 `vendor/`） |
 
